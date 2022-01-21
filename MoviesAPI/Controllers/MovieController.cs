@@ -4,10 +4,12 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using System.Web.Http.Cors;
 using MoviesAPI.Models.Entity;
 
 namespace MoviesAPI.Controllers
 {
+    [EnableCors("*","*","*")]
     public class MovieController : ApiController
     {
         // POST api/movie
